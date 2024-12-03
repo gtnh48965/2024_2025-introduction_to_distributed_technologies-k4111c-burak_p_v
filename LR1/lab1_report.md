@@ -17,6 +17,12 @@ Date of finished: 31.09.2024
 2. После запуска кластера и проверки подключения, был создан манифест vault.yaml. Для развертывания пода была использована следущая команда:
 - `kubectl apply -f vault.yaml` - данная команда сохраняет написанный ранее манифест и деплоит под.
 4. Убедились, что под был успешно запущен при помощи команды `kubectl get pods`
+```kubectl get pods
+NAME                                   READY   STATUS    RESTARTS      AGE
+frontend-deployment-6d6b8f7987-7kp7p   1/1     Running   3 (22h ago)   24h
+frontend-deployment-6d6b8f7987-lmt7h   1/1     Running   3 (22h ago)   24h
+vault                                  1/1     Running   0             2m4s
+```
 5. Манифест:
 
 ```apiVersion: v1
@@ -33,4 +39,14 @@ spec:
         - containerPort: 8200
 ```
 
-6. Создаём сервис доступа к контейнеру с помощью команды minikube kubectl -- expose pod vault --type=NodePort --port=8200 - данная команда создает сервис для открытия доступа к приложению по порту 8200.
+6. Создаём сервис доступа к контейнеру с помощью команды `minikube kubectl -- expose pod vault --type=NodePort --port=8200` - данная команда создает сервис для открытия доступа к приложению по порту 8200.
+   
+7. Прокидываем порт компьютера в контейнер при помощи команды `minikube kubectl -- port-forward service/vault 8200:8200` и попадаем в vault по ссылке http://localhost:8200
+
+```
+burakpetr@Buraks-MacBook-Pro introduction-to-distributed-technologies % minikube kubectl -- port-forward service/vault 8200:8200
+Forwarding from 127.0.0.1:8200 -> 8200
+Forwarding from [::1]:8200 -> 8200
+```
+
+
