@@ -51,3 +51,10 @@ Forwarding from [::1]:8200 -> 8200
 
 
 ![image](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR1/image/VaultMain.png 'Vault page')
+
+# Находим токен для входа в Vault
+8. Открываем логи и находим токен для входа в Vault при помощи команды `minikube kubectl -- logs vault`
+
+![image](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR1/image/authorizedVault.png)
+
+9. Схема организации контейнеров и сервисов:
