@@ -59,18 +59,18 @@ kubectl apply -f <file>
 ```
 Итак, манифест был применен:
 
-<!-- ![img.png](resources/img.png) -->
-
+![image](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR2/image/img_1.png)
+![image](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR2/image/img_2.png)
 Кроме того, была распечатана некоторая информация, например информация о развертывании и модулях.
 
 ## 3. Раскрытие развертывания
 После применения было открыто развертывание, и для доступа к контейнеру с хост-машины использовалась переадресация портов:
 
-<!-- ![img_1.png](resources/img_1.png) -->
+![image](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR2/image/img_3.png)
 
 Было решено использовать тип сервиса **LoadBalancer**. В результате открылась следующая страница:
 
-<!-- ![img_2.png](resources/img_2.png) -->
+![image](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR2/image/img_4.png)
 
 После обновления ничего не изменилось. Кажется, не хватает загрузки пода, 
 поэтому балансировщик нагрузки решает не пересылать запросы на другой модуль.
