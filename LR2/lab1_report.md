@@ -84,4 +84,4 @@ Server started on port 3000
 
 ## 4. Общая архитектура
 На рисунке ниже описаны сущности, которые используются в текущей лабораторной работе.
-<!-- ![img_3.png](resources/img_3.png) -->
+![img_3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR2/image/schedule.png) 
