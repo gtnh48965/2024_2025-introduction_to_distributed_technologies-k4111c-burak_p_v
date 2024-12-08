@@ -132,7 +132,7 @@ minikube addons enable ingress-dns
 
 Также следует отредактировать файл hosts , как показано ниже:
 ```
-127.0.0.1 front.vladlen.com
+127.0.0.1 burakfrontend
 ```
 
 При создании Ingress необходимо будет выполнить следующую команду:
