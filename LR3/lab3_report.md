@@ -123,6 +123,7 @@ spec:
 openssl genrsa -out ca.key -2048
 openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout ca.key -out ca.crt
 ```
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/certificate.png)
 
 ## 3. Настройка minikube и среды
 Из-за использования Docker в качестве драйвера minikube потребовалось добавить несколько дополнений для minikube:
