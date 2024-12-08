@@ -120,11 +120,16 @@ spec:
 ## 2. Создание сертификата TLS
 Для создания TLS-сертификата были использованы следующие команды:
 ```
-openssl genrsa -out ca.key -2048
-openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout ca.key -out ca.crt
+openssl genrsa -out lab3.key 2048
+openssl req -key lab3.key -new -out lab3.csr
 ```
 ![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/certificate.png)
 
+Можно подписать сертификат тем же ключом, с помощью которого он был создан.
+```
+openssl x509 -signkey lab3.key -in lab3.csr -req -days 30 -out lab3.crt
+```
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/certificateSignature.png)
 ## 3. Настройка minikube и среды
 Из-за использования Docker в качестве драйвера minikube потребовалось добавить несколько дополнений для minikube:
 ```
@@ -155,11 +160,11 @@ minikube tunnel
 https://burakfrontend
 ```
 
-![img_4.png]()
+![img_3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/result.png)
 
 Информация о сертификате:
 
-![img_3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/result.png)
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/totalСertificate.png)
 
 ## 6. Общая архитектура
-![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/totalСertificate.png)
+![img.png]()
