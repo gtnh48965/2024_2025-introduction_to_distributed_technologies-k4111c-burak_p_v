@@ -28,6 +28,7 @@ data:
   react_app_user_name: "Burak Petr"
   react_app_company_name: "ITMO ICT"
 ```
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/configMap.png)
 
 Во-вторых, необходимо было создать манифест ReplicaSet.
 
@@ -71,6 +72,8 @@ spec:
               key: react_app_company_name
 ```
 
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/replicaSet.png)
+
 В-третьих, необходимо было создать сервис для раскрытия pod-ов:
 ```yaml
 apiVersion: v1
@@ -89,7 +92,7 @@ spec:
       targetPort: 3000
       nodePort: 30333
 ```
-
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/service.png)
 В-четвертых, необходимо было создать вход:
 ```yaml
 apiVersion: networking.k8s.io/v1
