@@ -169,4 +169,4 @@ https://burakfrontend
 ![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/totalСertificate.png)
 
 ## 6. Общая архитектура
-![img.png]()
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/schedule.png)
