@@ -132,7 +132,7 @@ minikube addons enable ingress
 minikube addons enable ingress-dns
 ```
 
-![img.png]()
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/minikube.png)
 
 Также следует отредактировать файл hosts , как показано ниже:
 ```
