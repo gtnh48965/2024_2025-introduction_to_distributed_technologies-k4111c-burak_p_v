@@ -130,6 +130,12 @@ openssl req -key lab3.key -new -out lab3.csr
 openssl x509 -signkey lab3.key -in lab3.csr -req -days 30 -out lab3.crt
 ```
 ![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/certificateSignature.png)
+
+Создаем секрет командой - ```kubectl create secret tls lab3-tls --cert=lab3.crt --key=lab3.key```
+
+![img.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR3/image/creatingSecret.png)
+
+
 ## 3. Настройка minikube и среды
 Из-за использования Docker в качестве драйвера minikube потребовалось добавить несколько дополнений для minikube:
 ```
@@ -149,12 +155,8 @@ minikube addons enable ingress-dns
 minikube tunnel
 ```
 
-## 4. Применение манифестов
-Применение манифеста (+ создание секрета TLS):
 
-![img_1.png]()
-
-## 5. Доступ к приложению
+## 4. Доступ к приложению
 Для доступа к приложению необходимо было перейти по следующей ссылке:
 ```
 https://burakfrontend
