@@ -65,7 +65,7 @@ kubectl label nodes multinode-demo-m02 ra=a02
 ```bash
 calicoctl get ippool -o wide --allow-version-mismatch
 ```
-![4.png](mismatch.png)
+![4.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/mismatch.png)
 
 И удаляем его, заменяя на нашу конфигурацию:
 ```yaml
@@ -92,13 +92,13 @@ spec:
   nodeSelector: ra == "a02"
 ```
 
-![5.png](deleteIppools.png)
+![5.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/deleteIppools.png)
 
-![6.png](applyIppool.png)
+![6.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/applyIppool.png)
 
 Проверяем созданные пулы:
 
-![7.png](getIppool.png)
+![7.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/getIppool.png)
 
 ## 3. Deployment и Service
 
@@ -147,14 +147,14 @@ data:
 ```
 
 
-![8.png](applyManifest.png)
+![8.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/applyManifest.png)
 Видим что сервис, конфиг мапа и деплоймент созданы.
 
 ```bash
 kubectl expose deployments lab4-deployment --type=NodePort --port=3000
 ```
 
-![9.png](kubectlExpose.png)
+![9.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/kubectlExpose.png)
 И теперь пробросим порты
 ```bash
 kubectl port-forward lab4-deployment 4000:4000
@@ -164,7 +164,7 @@ kubectl port-forward lab4-deployment 4000:4000
 ## 4. Ping подов
 В конце проверили, что поды пингуют друг друга:
 Результат:
-![10.png](ping.png)
+![10.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/ping.png)
 
 ### 5. Диаграмма развертывания
 ![]()
