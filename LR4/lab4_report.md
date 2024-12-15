@@ -30,14 +30,14 @@ minikube start --network-plugin=cni --cni=calico --nodes 2 -p multinode-demo
 ```bash
 kubectl get nodes
 ```
-![1.png](getNodes.png)
+![1.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/getNodes.png)
 
 Также не лишним будет проверить количество подов `calico`.
 Их число должно совпадать с количеством нод.
 ```bash
 kubectl get pods -l k8s-app=calico-node -A
 ```
-![2.png](k8s-app=calico-node.png)
+![2.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/k8s-app=calico-node.png)
 
 ### 1.3 Пометка нод
 
@@ -56,7 +56,7 @@ kubectl get pods -l k8s-app=calico-node -A
 kubectl label nodes multinode-demo ra=a01
 kubectl label nodes multinode-demo-m02 ra=a02
 ```
-[3.png](kubectlLabel.png)
+[3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/kubectlLabel.png)
 
 ## 2. Настройка calico
 Далее из официальной документации Calico берется шаблон манифеста IPPool.
