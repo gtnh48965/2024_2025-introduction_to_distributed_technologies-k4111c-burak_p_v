@@ -56,7 +56,7 @@ kubectl get pods -l k8s-app=calico-node -A
 kubectl label nodes multinode-demo ra=a01
 kubectl label nodes multinode-demo-m02 ra=a02
 ```
-[3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/kubectlLabel.png)
+![3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/kubectlLabel.png)
 
 ## 2. Настройка calico
 Далее из официальной документации Calico берется шаблон манифеста IPPool.
