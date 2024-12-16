@@ -56,7 +56,7 @@ kubectl get pods -l k8s-app=calico-node -A
 kubectl label nodes multinode-demo ra=a01
 kubectl label nodes multinode-demo-m02 ra=a02
 ```
-[3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/kubectlLabel.png)
+![3.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/kubectlLabel.png)
 
 ## 2. Настройка calico
 Далее из официальной документации Calico берется шаблон манифеста IPPool.
@@ -160,11 +160,11 @@ kubectl expose deployments lab4-deployment --type=NodePort --port=3000
 kubectl port-forward lab4-deployment 4000:4000
 ```
 и переходим по локальному хосту на порт:
-
+![10.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/result.png)
 ## 4. Ping подов
 В конце проверили, что поды пингуют друг друга:
 Результат:
-![10.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/ping.png)
+![11.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/ping.png)
 
 ### 5. Диаграмма развертывания
 ![]()
