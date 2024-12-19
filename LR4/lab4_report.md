@@ -167,7 +167,7 @@ kubectl port-forward lab4-deployment 4000:4000
 ![11.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/ping.png)
 
 ### 5. Диаграмма развертывания
-![]()
+![12.png](https://github.com/gtnh48965/2024_2025-introduction_to_distributed_technologies-k4111c-burak_p_v/blob/main/LR4/image/graph.png)
 
 
 
